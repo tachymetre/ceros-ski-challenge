@@ -75,7 +75,7 @@ This is a fun coding challenge where there are lots of skill sets involved with 
 
 9. Deploy this very coding project to a Heroku server where external parties can play around with.
 
-##New stuff I add on for this challenge
+# New stuff I add on for this challenge
 
 1. After learning that Ceros has future plans to migrate the source code base to Typescript, I have taken the plunge to refactor the game logic in Typescript. Benefiting from Typescript features then transforming them to Javascript really enhance the way the code structured. Private and public methods are quick to identify and global namespacing is no longer an issue.
 
