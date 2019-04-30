@@ -412,7 +412,7 @@ export { GameComponent };
 (function () {
     var validDirection, validSpeed;
     do {
-        var userInputDirection = prompt('Please provide skier direction: (1 = left, 2 = leftDown, 3 = center, 4 = rightDown, 5 = right)'), userInputSpeed = prompt('Please provide skier speed: ');
+        var userInputDirection = prompt("Please provide skier's initial direction: (1 = left, 2 = leftDown, 3 = center, 4 = rightDown, 5 = right)"), userInputSpeed = prompt("Please provide skier's speed: (4-12) with 4 = slow, 8 = medium, 12 = fast");
         if ((userInputDirection === undefined) || parseInt(userInputDirection) !== 1 &&
             parseInt(userInputDirection) !== 2 && parseInt(userInputDirection) !== 3 &&
             parseInt(userInputDirection) !== 4 && parseInt(userInputDirection) !== 5) {
@@ -425,7 +425,7 @@ export { GameComponent };
             validSpeed = false;
         }
         else {
-            validSpeed = true;
+            validSpeed = (parseInt(userInputSpeed) >= 4 && parseInt(userInputSpeed) <= 12) ? true : false;
         }
     } while (!validDirection || !validSpeed);
     var game = new GameComponent(parseInt(userInputDirection), parseInt(userInputSpeed));
