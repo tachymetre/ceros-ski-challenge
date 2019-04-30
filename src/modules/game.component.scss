@@ -1,0 +1,58 @@
+$white: #ffffff;
+$black: #000000;
+$magenta: #aa4b6b;
+$cyan: #3b8d99;
+$gray: #6b6b83;
+$alpha1: rgba(0,0,0,0.8);
+$alpha7: rgba(0,0,0,0.7);
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.button {
+    border-radius: 5px;
+    background: $magenta;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $cyan, $gray, $magenta);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $cyan, $gray, $magenta); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $white;
+    font-weight: bold;
+    font-size: 13px;
+    position: relative;
+    padding: 5px 10px;
+    margin: 10px;
+}
+#scoreDisplay {
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $black;
+  background-color: $alpha7;
+  .modal-content {
+    background-color: $black;
+    background-color: $alpha1;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid $white;
+    width: 50%;
+    p {
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+}

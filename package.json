@@ -1,0 +1,35 @@
+{
+  "name": "ceros-ski",
+  "version": "0.0.1",
+  "description": "",
+  "main": "web.js",
+  "license": "(ISC OR GPL-3.0)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tachymetre/ceros-ski-challenge.git"
+  },
+  "scripts": {
+    "start": "node web.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server --baseDir='dist'",
+    "sass": "node-sass -w src/modules/ -o dist/css/ --output-style compressed",
+    "compile": "concurrently \"npm run tsc:w\" \"npm run lite\" \"npm run sass\""
+  },
+  "author": "dan.wash@ceros.com",
+  "engines": {
+    "node": "8.4.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.3.29",
+    "@types/lodash": "^4.14.123",
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^5.4.4",
+    "typescript": "^3.4.5"
+  }
+}

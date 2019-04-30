@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "dist/js",
+    "module": "es2015",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es6",
+      "es2015.promise",
+      "dom"
+    ],
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "files": [
+    "src/modules/game.component.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
